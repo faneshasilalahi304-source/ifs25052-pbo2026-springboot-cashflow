@@ -50,9 +50,10 @@ pipeline {
                 sh '''
                     set -e
 
-                    # Maven Wrapper memerlukan wget untuk mengunduh Maven
+                    # Maven Wrapper memerlukan wget untuk mengunduh Maven dan unzip untuk mengekstraknya
+                    export DEBIAN_FRONTEND=noninteractive
                     apt-get update -qq
-                    apt-get install -y -qq wget
+                    apt-get install -y -qq wget unzip
 
                     echo "=== Java Runtime ==="
                     java -version
