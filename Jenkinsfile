@@ -50,6 +50,10 @@ pipeline {
                 sh '''
                     set -e
 
+                    # Maven Wrapper memerlukan wget untuk mengunduh Maven
+                    apt-get update -qq
+                    apt-get install -y -qq wget
+
                     echo "=== Java Runtime ==="
                     java -version
 
