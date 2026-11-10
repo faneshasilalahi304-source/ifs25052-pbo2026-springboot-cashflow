@@ -1,0 +1,17 @@
+target/
+.env
+!.env.example
+.idea/
+*.iml
+.vscode/
+node_modules/
+frontend/generated/
+src/main/frontend/generated/
+package-lock.json
+package.json
+vite.config.ts
+vite.generated.ts
+tsconfig.json
+types.d.ts
+.mvn/wrapper/apache-maven-*
+.mvn/wrapper/maven.zip
