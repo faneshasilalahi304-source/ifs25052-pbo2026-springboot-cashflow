@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 /**
  * Smoke test: memastikan wiring bean Clean Architecture (composition root) berjalan.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 class AppTest {
 
     @Autowired
